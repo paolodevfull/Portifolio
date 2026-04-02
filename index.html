@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=0, initial-scale=1.0" />
+    <title>PAOLO | DEV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <!----------------------------------------------------------------------------------------------------------------------->
+
+  <body>
+    <!--Menu-->
+
+    <menu>
+      <button id="currículo">
+        <a href="curriculo_paolo.pdf" download>
+          <img id="download" src="icones/downloads.png" alt="" />Currículo
+        </a>
+      </button>
+      <div>
+        <img id="menuimgomoba" src="icones/menu.png" alt="">
+        <input id="menudropconfirmacao" type="checkbox">
+        <div id="menudrop">
+          <a href="#sobremimsection">
+          <button class="menubutton">
+            Sobre Mim
+          </button>
+        </a>
+        <a href="#habilidades">
+          <button class="menubutton">
+            Habilidades
+          </button>
+        </a>
+        <a href="#projetos">
+          <button class="menubutton">
+           Projetos
+          </button>
+        </a>
+        <a href="#redessociais">
+          <button class="menubutton">
+            Minhas Redes
+          </button>
+        </a>
+        <button onclick="darkmode()" id="modoescuro">🌙</button>
+        </div>
+      </div>
+    </menu>
+
+    <!--Tela Inicial-->
+
+    <main>
+      <hr>
+      <div id="apresentacao">
+        <p id="typing-text"></p>
+         <br/>
+        <h1 id="typing-text2"></h1>
+        <label id="typing-text3">
+        </label>
+      </div>
+      <div id="fechacodigo">&lt;/&gt;</div>
+      <a href="#sobremimsection" id="down">
+        <img src="icones/down-arrow.png" alt="" />
+      </a>
+    </main>
+
+    <!--Sobre mim-->
+
+    <section id="sobremimsection">
+      <p>
+       Sou Paolo Eduardo, atualmente estudante no Cotemig, 
+       e estou ativamente em busca da minha primeira experiência profissional
+       na área de Tecnologia da Informação (TI). Minha paixão é desenvolver 
+       soluções de ponta a ponta: possuo aptidão e interesse tanto na criação
+       de interfaces dinâmicas e funcionais (Front-end) quanto na construção
+       da lógica robusta por trás das aplicações (Back-end). Sou proativo em 
+       minha jornada de aprendizado e encaro cada novo desafio como uma
+       oportunidade de aprimorar minhas habilidades.
+      </p>
+      <img src="foto.jpeg" alt="" />
+    </section>
+
+    <!--Habilidades-->
+
+    <section id="habilidades">
+      <div id="pasteskills">
+        <div id="headbarskills"><>Habilidades&lt;/&gt;</div>
+        <div id="linguagens">
+          <div id="lingaguesicones">
+            <img id="mysqlicone" src="linguagensicones/image 1.svg" alt="" />
+            <div id="areadescmysql">
+              <p>
+                <h2><"MySQL"></h2>
+                 O MySQL E um sistema gerenciador de banco de dados
+                relacional (SGBDR) de codigo aberto, muito popular e amplamente
+                utilizado em aplicacoes web.
+                 <h2>&lt;/&gt;</h2>
+              </p>
+            </div>
+          </div>
+          <div id="lingaguesicones">
+            <img id="jsicone" src="linguagensicones/image 2.svg" alt="" />
+            <div id="areadescjs">
+              <p>
+                <h2><"JavaScript"></h2>
+                uma linguagem de programacao versatil usada para tornar paginas web interativas, 
+                funcionando tanto no lado do cliente (navegador) quanto no servidor (Node.js)
+                 <h2>&lt;/&gt;</h2>
+              </p>
+          </div>
+        </div>
+          <div id="lingaguesicones">
+            <img id="csharpicone" src="linguagensicones/image 3.svg" alt="" />
+            <div id="areadescsharp">
+              <p>
+                <h2>"C#"</h2>
+                 uma linguagem de programacao multiparadigma,
+                 orientada a objetos, desenvolvida pela Microsoft 
+                 como parte da plataforma .NET.
+                 <h2>&lt;/&gt;</h2>
+              </p>
+          </div>
+          </div>
+          <div id="lingaguesicones">
+            <img id="cssicone" src="linguagensicones/image 4.svg" alt="" />
+            <div id="areadescss">
+              <p>
+                <h2><"Css"></h2>
+                uma linguagem de estilo que separa o conteudo (HTML) da sua apresentacao visual, 
+                controlando aspectos como cores, fontes, layout e espacamento.
+                 <h2>&lt;/&gt;</h2>
+              </p>
+          </div>
+          </div>
+          <div id="lingaguesicones">
+            <img id="htmlicone" src="linguagensicones/image 5.svg" alt="" />
+            <div id="areahtml">
+              <p> 
+                <h2><"html"></h2>
+                linguagem padrao para estruturar o conteudo de paginas web,
+                definindo a estrutura de textos, imagens, links e outros elementos atraves 
+                de "tags"
+                <h2>&lt;/&gt;</h2>
+              </p>
+            </div>
+          </div>
+          <div id="lingaguesicones">
+            <img id="iconeoffice" src="linguagensicones/image 6.svg" alt="" />
+            <div id="areadesspacoteoffice">
+              <p>
+                <h2><"PACOTE OFFICE"></h2>
+                uma suite de aplicativos da Microsoft para produtividade,
+                 que inclui programas como Word (edicao de texto),
+                 Excel (planilhas) e PowerPoint (apresentacoes).
+                 <h2>&lt;/&gt;</h2>
+              </p>
+          </div>
+          </div>
+          <div id="lingaguesicones">
+            <img id="iconefigma" src="linguagensicones/image 7.svg" alt="" />
+            <div id="areadescfigma">
+              <p>
+                <h2><"figma"></h2>
+                uma ferramenta de design e prototipagem baseada em nuvem,
+                 usada para criar interfaces digitais como sites e aplicativos.
+                 <h2>&lt;/&gt;</h2>
+              </p>
+          </div>
+          </div>
+        
+      </div>
+      
+    </section>
+
+    <!--Projetos-->
+
+    <section id="projetos">
+      <div class="parent">
+        <div class="div1" id="projectdiv">
+          <a href="https://paolo-devs.github.io/airball/">
+            <img src="projetos/airball.png" alt="">
+          </a>
+        </div>
+        <div class="div2" id="projectdiv">
+          <a href="https://paolo-devs.github.io/ReproducaoSite/">
+            <img src="projetos/belara.png" alt="">
+          </a>
+        </div>
+        <div class="div3" id="projectdiv">            
+          <a href="https://paolo-devs.github.io/sitedisplayflex/">
+            <img src="projetos/bitmap.png" alt="">
+          </a>
+        </div>
+          </a>
+        <div class="div4" id="projectdiv">  
+          <a href="https://paolo-devs.github.io/grid/">
+            <img src="projetos/tulen.png" alt="">
+          </a>
+        </div>
+        <div class="div5">
+          <h1 id="projecttittle">
+            Projetos
+            <a href="https://github.com/Paolo-Devs"><img src="github.png" alt="" id="gitproject" /></a>
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!--RedesSociais-->
+
+    <section id="redessociais">
+      <div>
+        <h2>
+          <span id="turnintoorange"><></span> 
+          <label id="tittleredes">MINHAS REDES</label>
+          <span id="turnintoorange">&lt;/&gt;</span>
+        </h2>
+      </div>
+          <div class="pendulum">
+          <div class="pendulum_box">
+            <div class="ball first"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball last"></div>
+          </div>
+        </div>
+      <div id="redes">
+        <p>
+          <a href="">LINKEDIN</a>
+          <a href="https://github.com/Paolo-Devs">GITHUB</a>
+          <a href="">GMAIL</a>
+        </p>
+      </div>
+    </section>
+
+    <!--Formulario-->
+
+    <section id="formulario">
+      <div id="areaform">
+        <div id="tittleform">Entre em contato</div>
+        <div id="mainareaform">
+          <div>
+        <form action="">
+          <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" required="">
+            <label for="name" class="form__label">Nome</label>
+          </div>
+          <div class="form__group field">
+            <input type="text" class="form__field" oninput="mascara_telefone()" required  id="telefone" placeholder="Telefone">
+            <label for="name" class="form__label">Telefone</label>
+          </div>
+            
+          <div class="form__group field">
+            <input type="email" class="form__field" placeholder="E-mail" required="">
+            <label for="name" class="form__label">Email</label>
+          </div>
+            <input type="submit" id="enviar" />
+          </div>
+          <div> 
+            <label>Digite sua mensagem:</label>
+              <input type="input" id="mensagem" required>
+          </div>
+        </div>
+      </form>
+     </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer>PAOLO EDUARDO &copy 2025</footer>
+
+  </body>
+</html>
