@@ -1,290 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=0, initial-scale=1.0" />
-    <title>PAOLO | DEV</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
-      rel="stylesheet"
-    />
-    <script src="script.js" defer></script>
-  </head>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paolo Eduardo | TI & Desenvolvimento</title>
+  <meta name="description" content="Portfólio de Paolo Eduardo — Estagiário de TI e estudante de desenvolvimento, transitando entre suporte, redes e software." />
 
-  <!----------------------------------------------------------------------------------------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <body>
-    <!--Menu-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <menu>
-      <button id="currículo">
-        <a href="curriculo_paolo.pdf" download>
-          <img id="download" src="icones/downloads.png" alt="" />Currículo
-        </a>
-      </button>
-      <div>
-        <img id="menuimgomoba" src="icones/menu.png" alt="">
-        <input id="menudropconfirmacao" type="checkbox">
-        <div id="menudrop">
-          <a href="#sobremimsection">
-          <button class="menubutton">
-            Sobre Mim
-          </button>
-        </a>
-        <a href="#habilidades">
-          <button class="menubutton">
-            Habilidades
-          </button>
-        </a>
-        <a href="#projetos">
-          <button class="menubutton">
-           Projetos
-          </button>
-        </a>
-        <a href="#redessociais">
-          <button class="menubutton">
-            Minhas Redes
-          </button>
-        </a>
-        <button onclick="darkmode()" id="modoescuro">🌙</button>
-        </div>
-      </div>
-    </menu>
-
-    <!--Tela Inicial-->
-
-    <main>
-      <hr>
-      <div id="apresentacao">
-        <p id="typing-text"></p>
-         <br/>
-        <h1 id="typing-text2"></h1>
-        <label id="typing-text3">
-        </label>
-      </div>
-      <div id="fechacodigo">&lt;/&gt;</div>
-      <a href="#sobremimsection" id="down">
-        <img src="icones/down-arrow.png" alt="" />
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="mono">&lt;</span>Paolo<span class="mono">/&gt;</span>
       </a>
-    </main>
 
-    <!--Sobre mim-->
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#trajetoria" class="nav__link">Trajetória</a>
+        <a href="#habilidades" class="nav__link">Habilidades</a>
+        <a href="#projetos" class="nav__link">Projetos</a>
+        <a href="#redes" class="nav__link">Redes</a>
+        <a href="#contato" class="nav__link">Contato</a>
+        <a href="Curriculo_Paolo.png" download class="btn btn--outline nav__cta">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          Currículo
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro" type="button">🌙</button>
+      </nav>
 
-    <section id="sobremimsection">
-      <p>
-       Sou Paolo Eduardo, atualmente estudante no Cotemig, 
-       e estou ativamente em busca da minha primeira experiência profissional
-       na área de Tecnologia da Informação (TI). Minha paixão é desenvolver 
-       soluções de ponta a ponta: possuo aptidão e interesse tanto na criação
-       de interfaces dinâmicas e funcionais (Front-end) quanto na construção
-       da lógica robusta por trás das aplicações (Back-end). Sou proativo em 
-       minha jornada de aprendizado e encaro cada novo desafio como uma
-       oportunidade de aprimorar minhas habilidades.
-      </p>
-      <img src="foto.jpeg" alt="" />
-    </section>
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <!--Habilidades-->
-
-    <section id="habilidades">
-      <div id="pasteskills">
-        <div id="headbarskills"><>Habilidades&lt;/&gt;</div>
-        <div id="linguagens">
-          <div id="lingaguesicones">
-            <img id="mysqlicone" src="linguagensicones/image 1.svg" alt="" />
-            <div id="areadescmysql">
-              <p>
-                <h2><"MySQL"></h2>
-                 O MySQL E um sistema gerenciador de banco de dados
-                relacional (SGBDR) de codigo aberto, muito popular e amplamente
-                utilizado em aplicacoes web.
-                 <h2>&lt;/&gt;</h2>
-              </p>
-            </div>
-          </div>
-          <div id="lingaguesicones">
-            <img id="jsicone" src="linguagensicones/image 2.svg" alt="" />
-            <div id="areadescjs">
-              <p>
-                <h2><"JavaScript"></h2>
-                uma linguagem de programacao versatil usada para tornar paginas web interativas, 
-                funcionando tanto no lado do cliente (navegador) quanto no servidor (Node.js)
-                 <h2>&lt;/&gt;</h2>
-              </p>
-          </div>
-        </div>
-          <div id="lingaguesicones">
-            <img id="csharpicone" src="linguagensicones/image 3.svg" alt="" />
-            <div id="areadescsharp">
-              <p>
-                <h2>"C#"</h2>
-                 uma linguagem de programacao multiparadigma,
-                 orientada a objetos, desenvolvida pela Microsoft 
-                 como parte da plataforma .NET.
-                 <h2>&lt;/&gt;</h2>
-              </p>
-          </div>
-          </div>
-          <div id="lingaguesicones">
-            <img id="cssicone" src="linguagensicones/image 4.svg" alt="" />
-            <div id="areadescss">
-              <p>
-                <h2><"Css"></h2>
-                uma linguagem de estilo que separa o conteudo (HTML) da sua apresentacao visual, 
-                controlando aspectos como cores, fontes, layout e espacamento.
-                 <h2>&lt;/&gt;</h2>
-              </p>
-          </div>
-          </div>
-          <div id="lingaguesicones">
-            <img id="htmlicone" src="linguagensicones/image 5.svg" alt="" />
-            <div id="areahtml">
-              <p> 
-                <h2><"html"></h2>
-                linguagem padrao para estruturar o conteudo de paginas web,
-                definindo a estrutura de textos, imagens, links e outros elementos atraves 
-                de "tags"
-                <h2>&lt;/&gt;</h2>
-              </p>
-            </div>
-          </div>
-          <div id="lingaguesicones">
-            <img id="iconeoffice" src="linguagensicones/image 6.svg" alt="" />
-            <div id="areadesspacoteoffice">
-              <p>
-                <h2><"PACOTE OFFICE"></h2>
-                uma suite de aplicativos da Microsoft para produtividade,
-                 que inclui programas como Word (edicao de texto),
-                 Excel (planilhas) e PowerPoint (apresentacoes).
-                 <h2>&lt;/&gt;</h2>
-              </p>
-          </div>
-          </div>
-          <div id="lingaguesicones">
-            <img id="iconefigma" src="linguagensicones/image 7.svg" alt="" />
-            <div id="areadescfigma">
-              <p>
-                <h2><"figma"></h2>
-                uma ferramenta de design e prototipagem baseada em nuvem,
-                 usada para criar interfaces digitais como sites e aplicativos.
-                 <h2>&lt;/&gt;</h2>
-              </p>
-          </div>
-          </div>
-        
-      </div>
-      
-    </section>
-
-    <!--Projetos-->
-
-    <section id="projetos">
-      <div class="parent">
-        <div class="div1" id="projectdiv">
-          <a href="https://paolo-devs.github.io/airball/">
-            <img src="projetos/airball.png" alt="">
-          </a>
-        </div>
-        <div class="div2" id="projectdiv">
-          <a href="https://paolo-devs.github.io/ReproducaoSite/">
-            <img src="projetos/belara.png" alt="">
-          </a>
-        </div>
-        <div class="div3" id="projectdiv">            
-          <a href="https://paolo-devs.github.io/sitedisplayflex/">
-            <img src="projetos/bitmap.png" alt="">
-          </a>
-        </div>
-          </a>
-        <div class="div4" id="projectdiv">  
-          <a href="https://paolo-devs.github.io/grid/">
-            <img src="projetos/tulen.png" alt="">
-          </a>
-        </div>
-        <div class="div5">
-          <h1 id="projecttittle">
-            Projetos
-            <a href="https://github.com/Paolo-Devs"><img src="github.png" alt="" id="gitproject" /></a>
-          </h1>
-        </div>
-      </div>
-    </section>
-
-    <!--RedesSociais-->
-
-    <section id="redessociais">
-      <div>
-        <h2>
-          <span id="turnintoorange"><></span> 
-          <label id="tittleredes">MINHAS REDES</label>
-          <span id="turnintoorange">&lt;/&gt;</span>
-        </h2>
-      </div>
-          <div class="pendulum">
-          <div class="pendulum_box">
-            <div class="ball first"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball last"></div>
-          </div>
-        </div>
-      <div id="redes">
-        <p>
-          <a href="">LINKEDIN</a>
-          <a href="https://github.com/Paolo-Devs">GITHUB</a>
-          <a href="">GMAIL</a>
+  <!-- ============ HERO ============ -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__hello mono" id="typing-text"></p>
+        <h1 class="hero__name" id="typing-text2"></h1>
+        <p class="hero__role mono" id="typing-text3"></p>
+        <p class="hero__lead">
+          Estagiário de TI na MSP Otimizar Tecnologia e estudante de Técnico em
+          Informática no Cotemig Barroca (conclusão em dez/2026). Transito entre
+          suporte, redes e infraestrutura no dia a dia, e desenvolvimento de
+          soluções de ponta a ponta nos meus projetos.
         </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--solid">Ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">Entrar em contato</a>
+        </div>
+      </div>
+
+      <div class="hero__panel" aria-hidden="true">
+        <div class="window">
+          <div class="window__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="window__title mono">sobre-mim.js</span>
+          </div>
+          <pre class="window__code mono"><code><span class="c-key">const</span> <span class="c-var">paolo</span> = {
+  <span class="c-prop">nome</span>: <span class="c-str">"Paolo Eduardo"</span>,
+  <span class="c-prop">cargo</span>: <span class="c-str">"Estagiário de TI"</span>,
+  <span class="c-prop">frentes</span>: [<span class="c-str">"Help Desk"</span>, <span class="c-str">"Redes"</span>, <span class="c-str">"Dev"</span>],
+  <span class="c-prop">stack</span>: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"PHP"</span>, <span class="c-str">"MySQL"</span>, <span class="c-str">"Python"</span>],
+  <span class="c-prop">aprendendo</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">status</span>: <span class="c-str">"open_to_work"</span>};</code></pre>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__down" aria-label="Rolar para a seção Sobre">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section reveal" id="sobre">
+      <p class="section__tab mono">sobre-mim.md</p>
+      <div class="about">
+        <div class="about__photo">
+          <img src="foto.jpeg" alt="Foto de Paolo Eduardo" onerror="this.parentElement.classList.add('img-fallback')" />
+        </div>
+        <div class="about__text">
+          <h2 class="section__title">Sobre mim</h2>
+          <p>
+            Sou Paolo Eduardo Monteiro Lopes de Andrade, estudante de Técnico em
+            Informática no Colégio Cotemig Barroca (conclusão prevista para
+            dezembro de 2026) e atualmente Estagiário de TI na MSP Otimizar
+            Tecnologia, onde atuo com Help Desk, suporte a redes e infraestrutura.
+          </p>
+          <p>
+            Gosto de transitar entre as duas pontas da tecnologia: no trabalho,
+            resolvo problemas de hardware, software e rede no dia a dia; nos meus
+            projetos pessoais, coloco a mão na massa tanto no front-end quanto no
+            back-end, construindo soluções de ponta a ponta.
+          </p>
+          <p>
+            Sou proativo na minha jornada de aprendizado e encaro cada novo desafio
+            — seja um chamado de suporte ou uma linha de código — como uma
+            oportunidade de aprimorar minhas habilidades.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!--Formulario-->
+    <!-- ============ TRAJETORIA ============ -->
+    <section class="section section--alt reveal" id="trajetoria">
+      <div class="trajetoria-inner">
+        <p class="section__tab mono">trajetoria.log</p>
+        <h2 class="section__title">Trajetória</h2>
 
-    <section id="formulario">
-      <div id="areaform">
-        <div id="tittleform">Entre em contato</div>
-        <div id="mainareaform">
-          <div>
-        <form action="">
-          <div class="form__group field">
-            <input type="input" class="form__field" placeholder="Name" required="">
-            <label for="name" class="form__label">Nome</label>
-          </div>
-          <div class="form__group field">
-            <input type="text" class="form__field" oninput="mascara_telefone()" required  id="telefone" placeholder="Telefone">
-            <label for="name" class="form__label">Telefone</label>
-          </div>
-            
-          <div class="form__group field">
-            <input type="email" class="form__field" placeholder="E-mail" required="">
-            <label for="name" class="form__label">Email</label>
-          </div>
-            <input type="submit" id="enviar" />
-          </div>
-          <div> 
-            <label>Digite sua mensagem:</label>
-              <input type="input" id="mensagem" required>
+        <div class="timeline">
+          <article class="timeline__item">
+            <span class="timeline__date mono">Fev/2026 — atual</span>
+            <h3 class="timeline__title">Estagiário de TI</h3>
+            <p class="timeline__org">MSP Otimizar Tecnologia</p>
+            <ul class="timeline__list">
+              <li>Suporte técnico a usuários (Help Desk), atendendo chamados e solucionando problemas de hardware e software.</li>
+              <li>Monitoramento de alertas e incidentes de rede, escalando ocorrências críticas para a equipe responsável.</li>
+              <li>Apoio à manutenção preventiva e corretiva de redes e servidores.</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item">
+            <span class="timeline__date mono">2026 — atual</span>
+            <h3 class="timeline__title">Instrutor de Programação (voluntário)</h3>
+            <p class="timeline__org">Code Club &amp; Núcleo Amor e Cuidado — COTEMIG</p>
+            <ul class="timeline__list">
+              <li>Ensino de lógica de programação para iniciantes.</li>
+              <li>Apoio no desenvolvimento de atividades práticas em sala.</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item">
+            <span class="timeline__date mono">Previsão dez/2026</span>
+            <h3 class="timeline__title">Técnico em Informática</h3>
+            <p class="timeline__org">Colégio Cotemig Barroca — Turno Manhã</p>
+          </article>
+        </div>
+
+        <div class="certs">
+          <h3 class="certs__heading">Certificações</h3>
+          <div class="certs__grid">
+            <span class="cert-chip">IoT — Cisco</span>
+            <span class="cert-chip">Cibersegurança — Cisco</span>
+            <span class="cert-chip">Digital Awareness — Cisco</span>
+            <span class="cert-chip">Dispositivos Móveis — Cisco</span>
+            <span class="cert-chip">Montagem de Computadores — Cotemig</span>
+            <span class="cert-chip">Robótica — Cotemig</span>
           </div>
         </div>
-      </form>
-     </div>
+      </div>
     </section>
 
-    <!--Footer-->
+    <!-- ============ HABILIDADES ============ -->
+    <section class="section reveal" id="habilidades">
+      <p class="section__tab mono">skills.json</p>
+      <h2 class="section__title">Habilidades</h2>
+      <p class="section__subtitle">Toque ou passe o mouse em cada uma para ver a descrição.</p>
 
-    <footer>PAOLO EDUARDO &copy 2025</footer>
+      <div class="skills" id="skillsGrid">
+        <button class="skill" data-skill="redes">
+          <span class="skill__badge mono">NET</span>
+          <span class="skill__name">Redes &amp; Infra</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Suporte a redes e servidores, monitoramento de incidentes e manutenção preventiva/corretiva de infraestrutura.</span></div>
+        </button>
 
-  </body>
+        <button class="skill" data-skill="helpdesk">
+          <span class="skill__badge mono">HD</span>
+          <span class="skill__name">Help Desk</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Atendimento a chamados, diagnóstico e solução de problemas de hardware e software para usuários finais.</span></div>
+        </button>
+
+        <button class="skill" data-skill="python">
+          <span class="skill__badge mono">PY</span>
+          <span class="skill__name">Python</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Linguagem de propósito geral, usada aqui para lógica de programação, automações e scripts.</span></div>
+        </button>
+
+        <button class="skill" data-skill="php">
+          <span class="skill__badge mono">PHP</span>
+          <span class="skill__name">PHP</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Linguagem de back-end para construção de páginas dinâmicas e integração com bancos de dados.</span></div>
+        </button>
+
+        <button class="skill" data-skill="mysql">
+          <span class="skill__badge mono">SQL</span>
+          <span class="skill__name">MySQL</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Sistema gerenciador de banco de dados relacional (SGBDR) de código aberto, muito usado em aplicações web.</span></div>
+        </button>
+
+        <button class="skill" data-skill="js">
+          <span class="skill__badge mono">JS</span>
+          <span class="skill__name">JavaScript</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Linguagem versátil para tornar páginas web interativas, no navegador e também no servidor (Node.js).</span></div>
+        </button>
+
+        <button class="skill" data-skill="css">
+          <span class="skill__badge mono">CSS</span>
+          <span class="skill__name">CSS</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Separa o conteúdo (HTML) da apresentação visual: cores, fontes, layout e espaçamento.</span></div>
+        </button>
+
+        <button class="skill" data-skill="html">
+          <span class="skill__badge mono">&lt;/&gt;</span>
+          <span class="skill__name">HTML</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Linguagem padrão para estruturar o conteúdo de páginas web através de tags.</span></div>
+        </button>
+
+        <button class="skill" data-skill="figma">
+          <span class="skill__badge mono">FIG</span>
+          <span class="skill__name">Figma</span>
+          <div class="skill__desc-wrap"><span class="skill__desc">Ferramenta de design e prototipagem em nuvem para interfaces digitais.</span></div>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="section section--alt reveal" id="projetos">
+      <p class="section__tab mono">projetos/</p>
+      <div class="section__head">
+        <h2 class="section__title">Projetos</h2>
+        <a href="https://github.com/paolodevfull" class="btn btn--outline" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+          Ver no GitHub
+        </a>
+      </div>
+
+      <div class="projects">
+        <a class="project" href="https://paolo-devs.github.io/airball/" target="_blank" rel="noopener">
+          <div class="project__thumb"><img src="projetos/airball.png" alt="" onerror="this.parentElement.classList.add('img-fallback')" /></div>
+          <div class="project__info">
+            <span class="project__name">Airball</span>
+            <span class="project__link mono">ver projeto ↗</span>
+          </div>
+        </a>
+
+        <a class="project" href="https://paolo-devs.github.io/ReproducaoSite/" target="_blank" rel="noopener">
+          <div class="project__thumb"><img src="projetos/belara.png" alt="" onerror="this.parentElement.classList.add('img-fallback')" /></div>
+          <div class="project__info">
+            <span class="project__name">Reprodução Belara</span>
+            <span class="project__link mono">ver projeto ↗</span>
+          </div>
+        </a>
+
+        <a class="project" href="https://paolo-devs.github.io/sitedisplayflex/" target="_blank" rel="noopener">
+          <div class="project__thumb"><img src="projetos/bitmap.png" alt="" onerror="this.parentElement.classList.add('img-fallback')" /></div>
+          <div class="project__info">
+            <span class="project__name">Site Flexbox</span>
+            <span class="project__link mono">ver projeto ↗</span>
+          </div>
+        </a>
+
+        <a class="project" href="https://paolo-devs.github.io/grid/" target="_blank" rel="noopener">
+          <div class="project__thumb"><img src="projetos/tulen.png" alt="" onerror="this.parentElement.classList.add('img-fallback')" /></div>
+          <div class="project__info">
+            <span class="project__name">Layout Grid</span>
+            <span class="project__link mono">ver projeto ↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ REDES ============ -->
+    <section class="section reveal" id="redes">
+      <p class="section__tab mono">contatos.env</p>
+      <h2 class="section__title">Minhas redes</h2>
+
+      <div class="socials">
+        <a class="social" href="https://www.linkedin.com/in/paolo-eduardo/" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social" href="https://github.com/paolodevfull" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="social" href="mailto:paolodev.fullstack@gmail.com">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          <span>Gmail</span>
+        </a>
+        <a class="social" href="tel:+5531982715775">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span>(31) 98271-5775</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ FORMULARIO ============ -->
+    <section class="section section--alt reveal" id="contato">
+      <p class="section__tab mono">contato.form</p>
+      <div class="contact">
+        <h2 class="section__title">Entre em contato</h2>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <input class="field__input" type="text" id="nome" name="nome" placeholder=" " required />
+              <label class="field__label" for="nome">Nome</label>
+            </div>
+            <div class="field">
+              <input class="field__input" type="text" id="telefone" name="telefone" placeholder=" " maxlength="15" />
+              <label class="field__label" for="telefone">Telefone</label>
+            </div>
+          </div>
+          <div class="field">
+            <input class="field__input" type="email" id="email" name="email" placeholder=" " required />
+            <label class="field__label" for="email">E-mail</label>
+          </div>
+          <div class="field">
+            <textarea class="field__input field__textarea" id="mensagem" name="mensagem" placeholder=" " required></textarea>
+            <label class="field__label" for="mensagem">Mensagem</label>
+          </div>
+          <button type="submit" class="btn btn--solid form__submit">Enviar mensagem</button>
+          <p class="form__note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Paolo Eduardo &copy; 2026</p>
+    <a href="#top" class="footer__top" aria-label="Voltar ao topo">↑</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
